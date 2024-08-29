@@ -1,0 +1,369 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* HEADER */
+
+.nav-section {
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url(../images/college.jfif);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+nav {
+  display: flex;
+  padding: 2% 6%;
+  justify-content: space-around;
+  align-items: center;
+}
+nav img {
+  width: 90px;
+}
+.navbar {
+  flex: 1;
+  text-align: right;
+}
+
+.navbar ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+.navbar ul li a {
+  color: whitesmoke;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: sans-serif;
+}
+.navbar ul li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background-color: #f44366;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.navbar ul li:hover::after {
+  width: 100%;
+}
+
+.button {
+  background-color: black;
+  border-radius: 10px;
+  border: 2px solid black;
+  text-decoration: none;
+  background: transparent;
+  font-size: 20px;
+  padding: 10px 10px;
+  font-weight: 600;
+}
+.button:hover {
+  background-color: #f44366;
+  color: whitesmoke;
+  transition: 0.5s;
+  cursor: pointer;
+  transform: translateY(-7px);
+}
+.text {
+  width: 90%;
+  color: whitesmoke;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  line-height: 2;
+}
+.text h1 {
+  font-size: 40px;
+}
+.text p {
+  margin: 10px 0 40px;
+  font-size: 20px;
+}
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  color: whitesmoke;
+  border: 1px solid wheat;
+  padding: 12px 34px;
+  font-size: 20px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+}
+.btn:hover {
+  border: 1px solid #f44366;
+  background: #f44366;
+  transition: 0.5s;
+}
+
+/* COURSE */
+
+.Course {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+}
+.Course h1 {
+  font-size: 35px;
+  font-weight: 600;
+}
+
+.Course p {
+  color: #353535;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.5;
+  padding: 10px;
+}
+
+.row {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+.main-courses {
+  flex-basis: 31%;
+  background: #e8caca;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  padding: 20px 12px;
+  box-sizing: border-box;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.main-courses h3 {
+  font-size: 25px;
+  font-weight: 600;
+  margin: 10px 0;
+}
+.main-courses:hover {
+  box-shadow: 0 0 20px 0px rgba(221, 4, 4, 0.2);
+  transform: translatey(-20px);
+}
+
+/* CAMPUS */
+
+.campus {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.campus h1 {
+  font-size: 35px;
+  font-weight: 600;
+}
+
+.campus p {
+  color: #353535;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.5;
+  padding: 10px;
+}
+
+.diff-campus {
+  flex-basis: 32%;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+}
+
+.diff-campus img {
+  width: 100%;
+  display: block;
+}
+.diff-campus:hover {
+  transform: translatey(-20px);
+}
+.layer {
+  background: transparent;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+}
+.layer:hover {
+  background-color: #ea2d53;
+  opacity: 0.7;
+}
+.layer h3 {
+  width: 100%;
+  font-weight: 500;
+  color: whitesmoke;
+  font-size: 26px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  opacity: 0;
+  transition: 0.5s;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.layer:hover h3 {
+  bottom: 40%;
+  opacity: 1;
+}
+
+/* FACILITIES */
+
+.facility {
+  width: 100%;
+  text-align: center;
+  margin: auto;
+  padding: 100px;
+}
+
+.facility h1 {
+  font-size: 35px;
+  font-weight: 600;
+}
+
+.facility p {
+  color: #353535;
+  font-size: 20px;
+  line-height: 1.5;
+  font-weight: 300;
+  padding: 10px;
+}
+
+.diff-facility {
+  flex-basis: 31%;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  text-align: left;
+}
+.diff-facility img {
+  width: 100%;
+  border-radius: 10px;
+}
+.diff-facility p {
+  padding: 0;
+}
+
+.diff-facility h3 {
+  margin-top: 16px;
+  margin-bottom: 15px;
+  text-align: left;
+}
+.diff-facility:hover {
+  transform: translatey(-20px);
+}
+/* Review */
+
+.review {
+  width: 90%;
+  text-align: center;
+  margin: auto;
+  padding: 50px;
+}
+.review h1 {
+  font-size: 35px;
+  font-weight: 600;
+}
+
+.review p {
+  color: #353535;
+  font-size: 20px;
+  line-height: 1.5;
+  font-weight: 300;
+  padding: 10px;
+}
+
+.diff-review {
+  flex-basis: 44%;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  text-align: left;
+  background-color: #e8caca;
+  padding: 25px;
+  cursor: pointer;
+  display: flex;
+}
+.diff-review img {
+  height: 40px;
+  margin-left: 5px;
+  margin-right: 30px;
+  border-radius: 50%;
+}
+.diff-review p {
+  padding: 0;
+}
+
+.diff-review h3 {
+  margin-top: 15px;
+  text-align: center;
+}
+.diff-review i {
+  color: #f44366;
+}
+.diff-review:hover {
+  transform: translatey(-20px);
+}
+/* CONTACT US */
+
+.contact {
+  margin: 100px auto;
+  width: 80%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../images/meeting.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+  text-align: center;
+  padding: 100px 0;
+}
+.contact h1 {
+  color: whitesmoke;
+  margin-bottom: 40px;
+  padding: 0;
+}
+
+/* FOOTER */
+
+.footer {
+  width: 100%;
+  text-align: center;
+  padding: 30px 0;
+}
+
+.footer h4 {
+  margin-bottom: 25px;
+  margin-top: 20px;
+  font-weight: 600;
+}
+.footer p {
+  line-height: 1.7;
+}
+
+.icons i {
+  color: #f44366;
+  margin: 0 13px;
+  cursor: pointer;
+  padding: 18px 0;
+}
+#heart {
+  color: #f44366;
+}
+
+.last-para {
+  font-size: 25px;
+  font-weight: bolder;
+}

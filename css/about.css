@@ -1,0 +1,163 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.nav-section {
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url(../images/college.jfif);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+nav {
+  display: flex;
+  padding: 2% 6%;
+  justify-content: space-around;
+  align-items: center;
+}
+nav img {
+  width: 90px;
+}
+.navbar {
+  flex: 1;
+  text-align: right;
+}
+
+.navbar ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+.navbar ul li a {
+  color: whitesmoke;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: sans-serif;
+}
+.navbar ul li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background-color: #f44366;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.navbar ul li:hover::after {
+  width: 100%;
+}
+.button {
+  background-color: black;
+  border-radius: 10px;
+  border: 2px solid black;
+  text-decoration: none;
+  background: transparent;
+  font-size: 20px;
+  padding: 10px 10px;
+  font-weight: 600;
+}
+.button:hover {
+  background-color: #f44366;
+  color: whitesmoke;
+  transition: 0.5s;
+  cursor: pointer;
+  transform: translateY(-7px);
+}
+
+.footer {
+  width: 100%;
+  text-align: center;
+  padding: 30px 0;
+}
+
+.footer h4 {
+  margin-bottom: 25px;
+  margin-top: 20px;
+  font-weight: 600;
+}
+.footer p {
+  line-height: 1.7;
+}
+
+.icons i {
+  color: #f44366;
+  margin: 0 13px;
+  cursor: pointer;
+  padding: 18px 0;
+}
+#heart {
+  color: #f44366;
+}
+
+.last-para {
+  font-size: 25px;
+  font-weight: bolder;
+}
+
+.sub-header {
+  height: 50vh;
+  width: 100%;
+  background: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url(../images/convo.jpg);
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  color: white;
+}
+.sub-header h1 {
+  margin-top: 150px;
+}
+.about-us {
+  width: 80%;
+  margin: auto;
+  padding-top: 80px;
+  padding-bottom: 50px;
+}
+.row {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+.diff-about {
+  flex-basis: 48%;
+  padding: 30px 2px;
+}
+.diff-about img {
+  width: 100%;
+}
+
+.diff-about h1 {
+  padding: 0;
+}
+
+.diff-about p {
+  padding: 15px 0 25px;
+}
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  border: 1px solid wheat;
+  padding: 12px 34px;
+  font-size: 20px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+}
+.btn:hover {
+  border: 1px solid #f44366;
+  background: #f44366;
+  color: whitesmoke;
+  transition: 0.5s;
+}
+.red-btn {
+  border: 1px solid #f44366;
+  background: transparent;
+  color: #f44366;
+}

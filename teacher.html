@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard - Teacher Section</title>
+    <link rel="stylesheet" href="css/student.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Teacher Dashboard</h1>
+      <form id="studentForm">
+        <input
+          type="text"
+          id="studentName"
+          placeholder="Enter Teacher name"
+          required
+        />
+        <input type="text" id="studentClass" placeholder="Enter Age" required />
+        <input
+          type="date"
+          id="studentDOB"
+          class="date"
+          placeholder="Enter DOB"
+          required
+        />
+        <input
+          type="text"
+          id="fatherName"
+          placeholder="Enter father's name"
+          required
+        />
+        <input
+          type="text"
+          id="studentID"
+          placeholder="Enter Teacher ID"
+          required
+        />
+        <button type="submit">Add Teacher</button>
+      </form>
+
+      <ul id="studentList"></ul>
+    </div>
+    <script src="js/teacher.js"></script>
+  </body>
+</html>

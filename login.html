@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/login.css" />
+    <title>Login for Eduford</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="form-wrapper sign-in">
+        <form action="" id="login">
+          <img src="images/logo.png" alt="" />
+          <h2>Login</h2>
+          <div class="input-group">
+            <input type="text" id="login-email" name="email" required />
+            <label for="login-email">Enter Your Email</label>
+          </div>
+          <div class="input-group">
+            <input
+              type="password"
+              id="login-password"
+              name="password"
+              required
+            />
+            <label for="login-password">Enter Your Password</label>
+          </div>
+          <div class="message" id="login-message"></div>
+          <button type="submit">Login</button>
+          <div class="signUp-link">
+            <p
+              >Don't have an account
+              <a href="#" class="signUpBtn-link">Sign Up</a></p
+            >
+          </div>
+        </form>
+      </div>
+
+      <div class="form-wrapper sign-up">
+        <form action="" id="register">
+          <h2>Register</h2>
+          <div class="input-group">
+            <input type="email" id="register-email" name="email" required />
+            <label for="register-email">Enter Your Email</label>
+          </div>
+          <div class="input-group">
+            <input
+              type="password"
+              id="register-password"
+              name="password"
+              required
+            />
+            <label for="register-password">Enter Your Password</label>
+          </div>
+          <div class="message" id="register-message"></div>
+          <button type="submit">Register</button>
+          <div class="signUp-link">
+            <p
+              >Already have an account
+              <a href="#" class="signInBtn-link">Sign In</a></p
+            >
+          </div>
+        </form>
+      </div>
+    </div>
+    <script>
+      const signInBtnLink = document.querySelector(".signInBtn-link");
+      const signUpBtnLink = document.querySelector(".signUpBtn-link");
+      const wrapper = document.querySelector(".wrapper");
+
+      signUpBtnLink.addEventListener("click", () => {
+        wrapper.classList.toggle("active");
+      });
+      signInBtnLink.addEventListener("click", () => {
+        wrapper.classList.toggle("active");
+      });
+    </script>
+    <script src="js/studentlogin.js"></script>
+    <script src="js/login.js"></script>
+  </body>
+</html>
