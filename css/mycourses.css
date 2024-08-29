@@ -4,6 +4,73 @@ body {
   margin: 0;
   padding: 20px;
 }
+.nav-section {
+  min-height: 5vh;
+  width: 100%;
+  /* background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url(../images/college.jfif); */
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+nav {
+  display: flex;
+  padding: 2% 6%;
+  justify-content: space-around;
+  align-items: center;
+}
+nav img {
+  width: 90px;
+}
+.navbar {
+  flex: 1;
+  text-align: right;
+}
+
+.navbar ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+.navbar ul li a {
+  color: whitesmoke;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: sans-serif;
+}
+.navbar ul li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background-color: #f44366;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.navbar ul li:hover::after {
+  width: 100%;
+}
+
+.button {
+  background-color: black;
+  border-radius: 10px;
+  border: 2px solid black;
+  text-decoration: none;
+  background: transparent;
+  font-size: 20px;
+  padding: 10px 10px;
+  font-weight: 600;
+}
+.button:hover {
+  background-color: #f44366;
+  color: whitesmoke;
+  transition: 0.5s;
+  cursor: pointer;
+  transform: translateY(-7px);
+}
 
 .container {
   max-width: 1200px;
