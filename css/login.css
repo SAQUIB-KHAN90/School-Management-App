@@ -122,3 +122,9 @@ button {
 .signUp-link p a:hover {
   text-decoration: underline;
 }
+.Info {
+  margin-top: 10px;
+  height: 70px;
+  width: 100%;
+  color: #f83c7a;
+}
